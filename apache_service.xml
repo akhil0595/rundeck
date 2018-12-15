@@ -1,0 +1,31 @@
+<joblist>
+  <job>
+    <defaultTab>summary</defaultTab>
+    <description>install apache on second serever</description>
+    <dispatch>
+      <excludePrecedence>true</excludePrecedence>
+      <keepgoing>false</keepgoing>
+      <rankOrder>ascending</rankOrder>
+      <successOnEmptyNodeFilter>false</successOnEmptyNodeFilter>
+      <threadcount>1</threadcount>
+    </dispatch>
+    <executionEnabled>true</executionEnabled>
+    <group>Web/Install</group>
+    <id>a6909a69-5921-4b9c-95e7-3c0d6ccaa185</id>
+    <loglevel>INFO</loglevel>
+    <name>apache_install</name>
+    <nodeFilterEditable>false</nodeFilterEditable>
+    <nodefilters>
+      <filter>name: ubuntu02</filter>
+    </nodefilters>
+    <nodesSelectedByDefault>true</nodesSelectedByDefault>
+    <scheduleEnabled>true</scheduleEnabled>
+    <sequence keepgoing='false' strategy='node-first'>
+      <command>
+        <description>installing apache</description>
+        <exec>apt-get install apache2</exec>
+      </command>
+    </sequence>
+    <uuid>a6909a69-5921-4b9c-95e7-3c0d6ccaa185</uuid>
+  </job>
+</joblist>
